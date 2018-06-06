@@ -1,0 +1,372 @@
+10:11:20.527 [restartedMain] INFO  com.ruoyi.RuoYiApplication - Starting RuoYiApplication on DESKTOP-FOGS4GN with PID 14296 (D:\Idea2018\RuoYi\target\classes started by 石城俊 in D:\Idea2018\RuoYi)
+10:11:20.551 [restartedMain] DEBUG com.ruoyi.RuoYiApplication - Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+10:11:20.552 [restartedMain] INFO  com.ruoyi.RuoYiApplication - The following profiles are active: druid
+10:11:20.963 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+10:11:24.059 [restartedMain] INFO  org.apache.shiro.cache.ehcache.EhCacheManager - Cache with name 'com.ruoyi.framework.shiro.realm.UserRealm.authorizationCache' does not yet exist.  Creating now.
+10:11:24.060 [restartedMain] INFO  org.apache.shiro.cache.ehcache.EhCacheManager - Added EhCache named [com.ruoyi.framework.shiro.realm.UserRealm.authorizationCache]
+10:11:24.685 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+10:11:25.430 [restartedMain] INFO  org.apache.shiro.cache.ehcache.EhCacheManager - Using existing EHCache named [loginRecordCache]
+10:11:27.360 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+10:11:27.361 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+10:11:27.521 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:11:28.308 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+10:11:28.320 [restartedMain] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+10:11:28.320 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+10:11:28.330 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'RuoyiScheduler' with instanceId 'DESKTOP-FOGS4GN1528251088309'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+10:11:28.330 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'RuoyiScheduler' initialized from an externally provided properties instance.
+10:11:28.330 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+10:11:28.332 [restartedMain] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@852c882
+10:11:28.452 [restartedMain] DEBUG com.ruoyi.project.monitor.job.mapper.JobMapper.selectJobAll - ==>  Preparing: SELECT job_id, job_name, job_group, method_name, params, cron_expression, status, create_by, create_time FROM sys_job 
+10:11:28.612 [restartedMain] DEBUG com.ruoyi.project.monitor.job.mapper.JobMapper.selectJobAll - ==> Parameters: 
+10:11:28.660 [restartedMain] DEBUG com.ruoyi.project.monitor.job.mapper.JobMapper.selectJobAll - <==      Total: 2
+10:11:30.275 [restartedMain] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+10:11:32.530 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+10:11:32.590 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+10:11:32.653 [restartedMain] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+10:11:32.899 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+10:11:32.904 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+10:11:32.920 [restartedMain] ERROR org.apache.catalina.core.StandardService - Failed to start connector [Connector[HTTP/1.1-80]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-80]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.ruoyi.RuoYiApplication.main(RuoYiApplication.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1021)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 19 common frames omitted
+10:11:32.928 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-80"]
+10:11:32.928 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+10:11:32.937 [restartedMain] INFO  org.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+10:11:32.937 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-80"]
+10:11:32.937 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-80"]
+10:11:32.948 [restartedMain] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 80 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 80, or configure this application to listen on another port.
+
+10:11:32.990 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler RuoyiScheduler_$_DESKTOP-FOGS4GN1528251088309 shutting down.
+10:11:32.991 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler RuoyiScheduler_$_DESKTOP-FOGS4GN1528251088309 paused.
+10:11:32.992 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler RuoyiScheduler_$_DESKTOP-FOGS4GN1528251088309 shutdown complete.
+10:11:32.997 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+10:18:40.193 [restartedMain] INFO  com.ruoyi.RuoYiApplication - Starting RuoYiApplication on DESKTOP-FOGS4GN with PID 3800 (D:\Idea2018\RuoYi\target\classes started by 石城俊 in D:\Idea2018\RuoYi)
+10:18:40.199 [restartedMain] DEBUG com.ruoyi.RuoYiApplication - Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+10:18:40.199 [restartedMain] INFO  com.ruoyi.RuoYiApplication - The following profiles are active: druid
+10:18:40.377 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+10:18:42.238 [restartedMain] INFO  org.apache.shiro.cache.ehcache.EhCacheManager - Cache with name 'com.ruoyi.framework.shiro.realm.UserRealm.authorizationCache' does not yet exist.  Creating now.
+10:18:42.239 [restartedMain] INFO  org.apache.shiro.cache.ehcache.EhCacheManager - Added EhCache named [com.ruoyi.framework.shiro.realm.UserRealm.authorizationCache]
+10:18:42.633 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+10:18:42.979 [restartedMain] INFO  org.apache.shiro.cache.ehcache.EhCacheManager - Using existing EHCache named [loginRecordCache]
+10:18:44.330 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+10:18:44.330 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+10:18:44.428 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:18:45.010 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+10:18:45.030 [restartedMain] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+10:18:45.031 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+10:18:45.043 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'RuoyiScheduler' with instanceId 'DESKTOP-FOGS4GN1528251525014'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+10:18:45.044 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'RuoyiScheduler' initialized from an externally provided properties instance.
+10:18:45.044 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+10:18:45.047 [restartedMain] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@5062bfce
+10:18:45.104 [restartedMain] DEBUG com.ruoyi.project.monitor.job.mapper.JobMapper.selectJobAll - ==>  Preparing: SELECT job_id, job_name, job_group, method_name, params, cron_expression, status, create_by, create_time FROM sys_job 
+10:18:45.177 [restartedMain] DEBUG com.ruoyi.project.monitor.job.mapper.JobMapper.selectJobAll - ==> Parameters: 
+10:18:45.197 [restartedMain] DEBUG com.ruoyi.project.monitor.job.mapper.JobMapper.selectJobAll - <==      Total: 2
+10:18:46.696 [restartedMain] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+10:18:48.201 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+10:18:48.215 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+10:18:48.249 [restartedMain] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+10:18:48.391 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+10:18:48.401 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+10:18:48.409 [restartedMain] ERROR org.apache.catalina.core.StandardService - Failed to start connector [Connector[HTTP/1.1-80]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-80]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.ruoyi.RuoYiApplication.main(RuoYiApplication.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1021)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 19 common frames omitted
+10:18:48.456 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-80"]
+10:18:48.456 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+10:18:48.467 [restartedMain] INFO  org.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+10:18:48.467 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-80"]
+10:18:48.468 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-80"]
+10:18:48.483 [restartedMain] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 80 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 80, or configure this application to listen on another port.
+
+10:18:48.490 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler RuoyiScheduler_$_DESKTOP-FOGS4GN1528251525014 shutting down.
+10:18:48.491 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler RuoyiScheduler_$_DESKTOP-FOGS4GN1528251525014 paused.
+10:18:48.491 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler RuoyiScheduler_$_DESKTOP-FOGS4GN1528251525014 shutdown complete.
+10:18:48.497 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+10:20:15.064 [restartedMain] INFO  com.ruoyi.RuoYiApplication - Starting RuoYiApplication on DESKTOP-FOGS4GN with PID 5544 (D:\Idea2018\RuoYi\target\classes started by 石城俊 in D:\Idea2018\RuoYi)
+10:20:15.068 [restartedMain] DEBUG com.ruoyi.RuoYiApplication - Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+10:20:15.068 [restartedMain] INFO  com.ruoyi.RuoYiApplication - The following profiles are active: druid
+10:20:15.285 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+10:20:16.785 [restartedMain] INFO  org.apache.shiro.cache.ehcache.EhCacheManager - Cache with name 'com.ruoyi.framework.shiro.realm.UserRealm.authorizationCache' does not yet exist.  Creating now.
+10:20:16.786 [restartedMain] INFO  org.apache.shiro.cache.ehcache.EhCacheManager - Added EhCache named [com.ruoyi.framework.shiro.realm.UserRealm.authorizationCache]
+10:20:17.166 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+10:20:17.554 [restartedMain] INFO  org.apache.shiro.cache.ehcache.EhCacheManager - Using existing EHCache named [loginRecordCache]
+10:20:18.897 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+10:20:18.897 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+10:20:18.998 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:20:19.620 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+10:20:19.632 [restartedMain] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+10:20:19.632 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+10:20:19.641 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'RuoyiScheduler' with instanceId 'DESKTOP-FOGS4GN1528251619622'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+10:20:19.642 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'RuoyiScheduler' initialized from an externally provided properties instance.
+10:20:19.642 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+10:20:19.643 [restartedMain] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@45f42308
+10:20:19.681 [restartedMain] DEBUG com.ruoyi.project.monitor.job.mapper.JobMapper.selectJobAll - ==>  Preparing: SELECT job_id, job_name, job_group, method_name, params, cron_expression, status, create_by, create_time FROM sys_job 
+10:20:19.747 [restartedMain] DEBUG com.ruoyi.project.monitor.job.mapper.JobMapper.selectJobAll - ==> Parameters: 
+10:20:19.761 [restartedMain] DEBUG com.ruoyi.project.monitor.job.mapper.JobMapper.selectJobAll - <==      Total: 2
+10:20:21.133 [restartedMain] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+10:20:22.648 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+10:20:22.662 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+10:20:22.698 [restartedMain] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+10:20:22.845 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+10:20:22.851 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+10:20:22.856 [restartedMain] ERROR org.apache.catalina.core.StandardService - Failed to start connector [Connector[HTTP/1.1-80]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-80]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.ruoyi.RuoYiApplication.main(RuoYiApplication.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1021)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 19 common frames omitted
+10:20:22.865 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-80"]
+10:20:22.866 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+10:20:22.904 [restartedMain] INFO  org.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+10:20:22.905 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-80"]
+10:20:22.905 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-80"]
+10:20:22.920 [restartedMain] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 80 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 80, or configure this application to listen on another port.
+
+10:20:22.926 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler RuoyiScheduler_$_DESKTOP-FOGS4GN1528251619622 shutting down.
+10:20:22.926 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler RuoyiScheduler_$_DESKTOP-FOGS4GN1528251619622 paused.
+10:20:22.927 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler RuoyiScheduler_$_DESKTOP-FOGS4GN1528251619622 shutdown complete.
+10:20:22.931 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+10:44:02.865 [restartedMain] INFO  com.ruoyi.RuoYiApplication - Starting RuoYiApplication on DESKTOP-FOGS4GN with PID 17400 (D:\Idea2018\RuoYi\target\classes started by 石城俊 in D:\Idea2018\RuoYi)
+10:44:02.882 [restartedMain] DEBUG com.ruoyi.RuoYiApplication - Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+10:44:02.883 [restartedMain] INFO  com.ruoyi.RuoYiApplication - The following profiles are active: druid
+10:44:03.299 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+10:44:06.608 [restartedMain] INFO  org.apache.shiro.cache.ehcache.EhCacheManager - Cache with name 'com.ruoyi.framework.shiro.realm.UserRealm.authorizationCache' does not yet exist.  Creating now.
+10:44:06.609 [restartedMain] INFO  org.apache.shiro.cache.ehcache.EhCacheManager - Added EhCache named [com.ruoyi.framework.shiro.realm.UserRealm.authorizationCache]
+10:44:07.269 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+10:44:08.000 [restartedMain] INFO  org.apache.shiro.cache.ehcache.EhCacheManager - Using existing EHCache named [loginRecordCache]
+10:44:09.988 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+10:44:09.990 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+10:44:10.117 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:44:10.889 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+10:44:10.902 [restartedMain] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+10:44:10.903 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+10:44:10.915 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'RuoyiScheduler' with instanceId 'DESKTOP-FOGS4GN1528253050891'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+10:44:10.915 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'RuoyiScheduler' initialized from an externally provided properties instance.
+10:44:10.915 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+10:44:10.917 [restartedMain] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@e9ed026
+10:44:10.975 [restartedMain] DEBUG com.ruoyi.project.monitor.job.mapper.JobMapper.selectJobAll - ==>  Preparing: SELECT job_id, job_name, job_group, method_name, params, cron_expression, status, create_by, create_time FROM sys_job 
+10:44:11.115 [restartedMain] DEBUG com.ruoyi.project.monitor.job.mapper.JobMapper.selectJobAll - ==> Parameters: 
+10:44:11.144 [restartedMain] DEBUG com.ruoyi.project.monitor.job.mapper.JobMapper.selectJobAll - <==      Total: 2
+10:44:12.815 [restartedMain] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+10:44:15.002 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+10:44:15.016 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+10:44:15.059 [restartedMain] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+10:44:15.222 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+10:44:15.231 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+10:44:15.251 [restartedMain] ERROR org.apache.catalina.core.StandardService - Failed to start connector [Connector[HTTP/1.1-80]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-80]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.ruoyi.RuoYiApplication.main(RuoYiApplication.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1021)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 19 common frames omitted
+10:44:15.258 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-80"]
+10:44:15.258 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+10:44:15.267 [restartedMain] INFO  org.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+10:44:15.267 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-80"]
+10:44:15.268 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-80"]
+10:44:15.277 [restartedMain] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 80 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 80, or configure this application to listen on another port.
+
+10:44:15.315 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler RuoyiScheduler_$_DESKTOP-FOGS4GN1528253050891 shutting down.
+10:44:15.316 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler RuoyiScheduler_$_DESKTOP-FOGS4GN1528253050891 paused.
+10:44:15.316 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler RuoyiScheduler_$_DESKTOP-FOGS4GN1528253050891 shutdown complete.
+10:44:15.319 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
